@@ -56,6 +56,7 @@
     NSUInteger index = (NSUInteger) indexPath.row;
     
     HDSectionData *sectionData = self.tableData.sectionDatas[section];
+    [sectionData doCellMakerBlock];
         
     HDCellData *cellData = sectionData.cellDatas[index];
 
